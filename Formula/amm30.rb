@@ -12,7 +12,7 @@ class Amm30 < Formula
   def install
     (libexec/"bin").install Dir["*"].first => "amm30"
     chmod 0755, libexec/"bin/amm30"
-    (bin/"amm30").write_env_script libexec/"bin/amm212", Language::Java.overridable_java_home_env
+    (bin/"amm30").write_env_script libexec/"bin/amm30", Language::Java.overridable_java_home_env
   end
 
   test do
